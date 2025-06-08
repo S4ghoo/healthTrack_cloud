@@ -1,0 +1,189 @@
+/* Custom styles for HealthTrack application */
+
+/* Base styles and typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* Center the container with a modern card-like appearance */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Style for the form inputs and selects */
+input[type="text"],
+input[type="number"],
+select {
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-right: 15px;
+    width: 220px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+    outline: none;
+}
+
+/* Style for the submit button */
+button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Style for the patient list items with card design */
+li {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the error message */
+p[style*="color: red"] {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+    animation: shake 0.5s ease;
+}
+
+/* Keyframes for shake animation on error */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Style for headings */
+h1 {
+    color: #1e40af;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #1e40af;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Style for the calendar */
+.react-calendar {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-family: inherit;
+}
+
+.react-calendar button {
+    background: none;
+    border: none;
+    padding: 5px;
+    font-size: 0.9rem;
+    color: #1f2937;
+}
+
+.react-calendar button:hover {
+    background-color: #f3f4f6;
+    border-radius: 4px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 640px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .react-calendar {
+        max-width: 100%;
+    }
+}
