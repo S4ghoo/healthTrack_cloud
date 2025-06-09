@@ -36,7 +36,7 @@ function App() {
             console.error('Detailed error fetching patients:', error.message);
             setError(error.message);
         }
-    }, [fetchMedicalHistory]); // Empty dependency array since fetchPatients is stable
+    }, []); // Empty dependency array since fetchPatients is stable
 
     const fetchAppointments = useCallback(async () => {
         try {
