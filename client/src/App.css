@@ -1,6 +1,5 @@
 /* Custom styles for HealthTrack application */
 
-/* Base styles and typography */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f3f4f6;
@@ -8,7 +7,6 @@ body {
     line-height: 1.6;
 }
 
-/* Center the container with a modern card-like appearance */
 .container {
     max-width: 900px;
     margin: 20px auto;
@@ -19,13 +17,11 @@ body {
     animation: fadeIn 0.5s ease-in;
 }
 
-/* Keyframes for fade-in animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-/* Style for the form inputs and selects */
 input[type="text"],
 input[type="number"],
 select {
@@ -46,7 +42,6 @@ select:focus {
     outline: none;
 }
 
-/* Style for the submit button */
 button {
     background-color: #3b82f6;
     color: white;
@@ -68,7 +63,6 @@ button:active {
     transform: translateY(0);
 }
 
-/* Style for the patient list items with card design */
 li {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
@@ -88,7 +82,6 @@ li:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the error message */
 p[style*="color: red"] {
     background-color: #fee2e2;
     color: #dc2626;
@@ -100,7 +93,6 @@ p[style*="color: red"] {
     animation: shake 0.5s ease;
 }
 
-/* Keyframes for shake animation on error */
 @keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
@@ -109,7 +101,6 @@ p[style*="color: red"] {
     100% { transform: translateX(0); }
 }
 
-/* Style for headings */
 h1 {
     color: #1e40af;
     font-size: 2rem;
@@ -125,7 +116,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Style for the calendar */
 .react-calendar {
     width: 100%;
     max-width: 400px;
@@ -150,7 +140,6 @@ h2 {
     border-radius: 4px;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 640px) {
     .container {
         margin: 10px;
