@@ -109,3 +109,4 @@ async function startServer() {
 }
 
 startServer();
+module.exports = app;
