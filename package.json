@@ -9,11 +9,24 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "build": "cd client && npm run build"
-  },
-  "scripts": {
     "build": "cd client && npm run build",
     "build:server": "cd server && npm run build",
     "dev": "cd client && npm start"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@apideck/better-ajv-errors": "^0.3.6",
+    "workbox-webpack-plugin": "^7.3.0"
   }
 }

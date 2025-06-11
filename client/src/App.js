@@ -10,7 +10,7 @@ function App() {
 
     // Fetch patients from the backend
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_API_BASE_URL}/api/patients`)
+        fetch(`/api/patients`)
             .then((response) => {
                 if (!response.ok) throw new Error('Failed to fetch patients');
                 return response.json();
